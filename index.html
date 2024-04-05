@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài Tập Mảng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mt-3">Bài Tập Mảng</h2>
+        <div class="mb-3">
+            <input type="number" name="" id="number" class="form-control" placeholder="Enter a number to array"/>
+        </div>
+        <div class="mb-3">
+            <button onclick="Submit()" class="btn btn-success">Submit</button>
+            <div id="result" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 1.Tổng các số dương trong mảng. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau1" onclick="sumPosInt()">Tổng Số Dương</button>
+            <div id="result1" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 2.Đếm có bao nhiêu số dương trong mảng. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau2" onclick="countPosInt()">Đếm Số Dương</button>
+            <div id="result2" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 3.Tìm số nhỏ nhất trong mảng. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau3" onclick="findMin()">Tìm số nhỏ nhất</button>
+            <div id="result3" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 4.Tìm số dương nhỏ nhất trong mảng. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau4" onclick="findMinPos()">Tìm số dương nhỏ nhất</button>
+            <div id="result4" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 5.Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau5" onclick="findLastEven()">Tìm số chẵn cuối cùng</button>
+            <div id="result5" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 6.Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị). -->
+        <div class="mb-3">
+            <input type="number" name="" id="pos1" class="form-control" placeholder="Enter 1st index"/>
+            <input type="number" name="" id="pos2" class="form-control" placeholder="Enter 2nd index"/>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau6" onclick="swapIndex()">Đổi chỗ</button>
+            <div id="result6" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 7.Sắp xếp mảng theo thứ tự tăng dần. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau7" onclick="sorting()">Sắp xếp tăng dần</button>
+            <div id="result7" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 8.Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau8" onclick="firstPrime()">Tìm số nguyên tố đầu tiên</button>
+            <div id="result8" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 9.Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên? -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau9" onclick="countInt()">Đếm số nguyên</button>
+            <div id="result9" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+        <!-- 10.So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn. -->
+        <div class="mb-3">
+            <button class="btn btn-success" id="cau10" onclick="compare()">So sánh số lượng số dương và âm</button>
+            <div id="result10" class="text-danger fs-2 fw-bolder"></div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
