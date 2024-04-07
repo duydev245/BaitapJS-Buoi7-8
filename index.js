@@ -6,7 +6,7 @@ function Submit() {
     numArr.push(+num);
 
     console.log(numArr);
-    document.querySelector('#result').innerHTML = `<p>Number numArr: ${numArr}</p>`;
+    document.querySelector('#result').innerHTML = `<p>Mảng là: ${numArr}</p>`;
     document.querySelector('#number').value = '';
 }
 
@@ -118,10 +118,23 @@ function firstPrime() {
 }
 
 // 9.Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?
+var numArr1 = [];
+
+function Submit1() {
+    // lấy gtri user nhập
+    var num = document.querySelector('#number1').value * 1;
+    numArr1.push(+num);
+
+    console.log(numArr);
+    document.querySelector('#result11').innerHTML = `<p>Mảng mới là: ${numArr1}</p>`;
+    document.querySelector('#number1').value = '';
+}
+
 function countInt() {
+    var combinedArray = numArr.concat(numArr1);
     var count = 0;
-    for (var i = 0; i < numArr.length; i++) {
-        if (Number.isInteger(numArr[i])) {
+    for (var i = 0; i < combinedArray.length; i++) {
+        if (Number.isInteger(combinedArray[i])) {
             count++;
         }
     }
